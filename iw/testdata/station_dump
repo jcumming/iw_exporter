@@ -1,0 +1,50 @@
+Station f8:f1:b6:00:00:04 (on wlan0)
+	inactive time:	8920 ms
+	rx bytes:	10796689
+	rx packets:	74609
+	tx bytes:	246002740
+	tx packets:	169882
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-78 dBm
+	signal avg:	-77 dBm
+	tx bitrate:	260.0 MBit/s VHT-MCS 5 80MHz short GI VHT-NSS 1
+	rx bitrate:	48.0 MBit/s
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	short
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	DTIM period:	2
+	beacon interval:100
+	short preamble:	yes
+	short slot time:yes
+	connected time:	12012 seconds
+Station ac:22:0b:00:00:03 (on wlan0)
+	inactive time:	6360 ms
+	rx bytes:	72445
+	rx packets:	547
+	tx bytes:	88208
+	tx packets:	239
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-83 dBm
+	signal avg:	-83 dBm
+	tx bitrate:	135.0 MBit/s MCS 7 40MHz
+	rx bitrate:	48.0 MBit/s
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	short
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	DTIM period:	2
+	beacon interval:100
+	short preamble:	yes
+	short slot time:yes
+	connected time:	4331 seconds

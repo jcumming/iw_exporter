@@ -1,0 +1,11 @@
+Station ff:ff:ff:00:00:05 (on broken0)
+	inactive time:	8920ms
+	rx bytes:
+	tx bytes:	
+	no colon on this line
+	connected time:	seconds
+Station ff:ff:ff:00:00:03 (on wlan0)
+	rx bytes:	72445
+	rx packets:	547
+	tx bytes:	88208
+	tx packets:	239

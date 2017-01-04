@@ -1,0 +1,23 @@
+phy#2
+	Interface broken0
+		type AP
+		channel ZZZ (5180 MHz), width: 80 MHz, center1: 5210 MHz
+		txpower --.-- dBm
+phy#1
+	Interface wlan1
+		ifindex 25
+		wdev 0x100000002
+		addr c2:56:27:00:00:01
+		ssid testing
+		type AP
+		channel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz
+		txpower 30.00 dBm
+phy#0
+	Interface wlan0
+		ifindex 26
+		wdev 0x2
+		addr c2:56:27:00:00:00
+		ssid testing
+		type AP
+		channel 36 (5180 MHz), width: 80 MHz, center1: 5210 MHz
+		txpower 23.00 dBm
