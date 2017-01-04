@@ -15,12 +15,14 @@ type Device struct {
 	TxPower float64
 }
 
+var (
+	reInt  = regexp.MustCompile(`^\s*Interface ([^\s]+)`)
+	reChan = regexp.MustCompile(`^\s*channel ([0-9]+) .*width: ([0-9]+)`)
+	reTx   = regexp.MustCompile(`^\s*txpower ([0-9.]+)`)
+)
+
 // Devices reads "iw dev" text to return filled in Device structs
 func Devices(r io.Reader) (devs []*Device) {
-	reInt := regexp.MustCompile(`\s*Interface ([^\s]+).*`)
-	reChan := regexp.MustCompile(`\s*channel ([0-9]+) .*width: ([0-9]+) .*`)
-	reTx := regexp.MustCompile(`\s*txpower ([0-9.]+) .*`)
-
 	var iw *Device
 
 	s := bufio.NewScanner(r)
