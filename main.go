@@ -7,6 +7,7 @@ import (
 
 	"github.com/jamessanford/iw_exporter/collector"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/log"
 )
 
@@ -21,7 +22,7 @@ func main() {
 		w.WriteHeader(http.StatusNotFound)
 		_, _ = io.WriteString(w, "iw_exporter\n")
 	})
-	http.Handle("/metrics", prometheus.Handler())
+	http.Handle("/metrics", promhttp.Handler())
 	log.Infof("listening on %v", *httpAddr)
 	log.Fatal(http.ListenAndServe(*httpAddr, nil))
 }
